@@ -37,5 +37,4 @@ deploy:
       docker login -u $docker_user -p $docker_pass &&
       docker ps -aq | xargs docker stop | xargs docker rm &&
       docker run -d -p 5000:5000 $IMAGE_NAME:$IMAGE_TAG"
-    "
 
