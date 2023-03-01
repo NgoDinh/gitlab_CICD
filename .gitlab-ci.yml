@@ -26,7 +26,7 @@ build_image:
     - docker login -u $docker_user -p $docker_pass
   script:
     - docker build -t $IMAGE_NAME:$IMAGE_TAG .
-    - docker push $IMAGE_NAME:$IMAGE_TAG
+    - docker image push $IMAGE_NAME:$IMAGE_TAG
 
 deploy:
   stage: deploy
