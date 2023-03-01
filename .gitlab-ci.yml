@@ -1,6 +1,6 @@
 variables:
   IMAGE_NAME: vund1993/learn-cicd
-  IMAGE_TAG: python-app
+  IMAGE_TAG: latest
 
 stages:
   - test
